@@ -222,6 +222,7 @@ if($basic['gender']=='male')
 }
 else
 {
-	echo $template['female']; 
+	echo $template['female'];
+} 
 ?>
 
