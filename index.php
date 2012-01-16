@@ -36,7 +36,8 @@ $token = FBUtils::login(AppInfo::getHome());
 if ($token) {
 
   // Fetch the viewer's basic information, using the token just provided
-  $basic = array_values(idx(FBUtils::fetchFromFBGraph("me?access_token=$token"),'data',null,false));
+  $basic = FBUtils::fetchFromFBGraph("me?access_token=$token");
+  $basic_j=json_decode($basic);
   //$my_id = assertNumeric(idx($basic, 'id'));
 
   // Fetch the basic info of the app that they are using
@@ -216,7 +217,7 @@ $template['female']=<<<EOT
 </html>
 EOT;
  
-if($basic['gender']=='male')
+if($basic_j->gender=='male')
 {
 	echo $template['male'];
 }
