@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>WHERE THE FUCK SHOULD I GO FOR DRINKS?</title>
+<meta property="og:title" content="WHERE THE FUCK SHOULD I GO FOR DRINKS?"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://wherethefuckshouldigofordrinks.com"/>
+<meta property="og:image" content="http://wherethefuckshouldigofordrinks.com/apple-touch-icon-114x114-precomposed.png"/>
+<meta name="og:site_name" content="WTFSIGFD"/>
+<meta name="og:description" content="WHERE THE FUCK SHOULD I GO FOR DRINKS"/>
+<meta name="description" content="WHERE THE FUCK SHOULD I GO FOR DRINKS"/>
+<meta name="keywords" content="where the fuck should i go for drinks? drinks, recommendations, pubs, bars, maps, directions, google, api, html5, css3, jquery, responsive, cool, coolography, "/>
+<meta name="author" content="Abishek"/>
+<meta property="fb:app_id" content="186690998096099"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="stylesheets/foundation.css"/>
+<link rel="stylesheet" href="stylesheets/app.css"/>
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/modernizr-2.0.min.js"></script>
+</head>
+<body>
+<!-- container -->
+<div class="container"> <a  id="wait">WAIT THE FUCK UP <span></span></a> 
+    <!-- GEOLOCATION-->
+    <div id="locate" class="row">
+        <div class="twelve columns">
+            <form id="locationBar" action="javascript:codeAddress()">
+                <div id="error">can't find your fucking location. try again</div>
+                <input id="location" placeholder="WHERE THE FUCK ARE YOU?" type="text">
+                <input type="submit" class="submit" value="find me a place to fucking drink">
+            </form>
+        </div>
+    </div>
+    <!--RECOMMENDATION-->
+    <div id="recommendation" class="row">
+        <div class="twelve columns"> <span id="destination"></span>
+            <div id="mapcontainer">
+                <div id="address"></div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!--ACTIONS-->
+    <div id="actions" class="row">
+        <div class="six columns"> <a href="?wherethefuck" id="wrong" title="BECAUSE YOUR ISP IS PROBABLY SHIT">My location is fucking wrong</a> </div>
+        <div class="six columns"> <a href="#" id="shit" title="FUCK YOU">No, That place looks like it is gunna burn a whole in my wallet</a> </div>
+    </div>
+<!-- MAPS --> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places,adsense&sensor=true&key=AIzaSyCTxiWhuS0yb-zBc11xjfNlFubjdYkZtp8" type="text/javascript"></script> 
+
+<!-- Included JS Files --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<script src="js/script.js"></script>
+</body>
+</html>
